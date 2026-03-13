@@ -8,7 +8,7 @@ async function search() {
     const resultDiv = document.getElementById("result");
 
     // Steg 1: Hitta rätt sidtitel via opensearch
-    const searchUrl = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${query}&limit=1&format=json&origin=*`;
+    const searchUrl = `https://sv.wikipedia.org/w/api.php?action=opensearch&search=${query}&limit=1&format=json&origin=*`;
 
     try {
         const searchResponse = await fetch(searchUrl);
@@ -21,7 +21,7 @@ async function search() {
         }
 
         // Steg 2: Hämta ett kort utdrag om sidan
-        const summaryUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
+        const summaryUrl = `https://sv.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
 
         const summaryResponse = await fetch(summaryUrl);
         const summaryData = await summaryResponse.json();
