@@ -32,3 +32,12 @@ https://en.wikipedia.org/w/api.php?action=opensearch&search=New York&limit=1&for
 ```
 https://en.wikipedia.org/api/rest_v1/page/summary/New_York_City
 ```
+
+**För svenska svar som response:**
+```
+https://sv.wikipedia.org/w/api.php?action=opensearch&search=New York&limit=1&format=json&origin=*
+```
+
+```
+https://sv.wikipedia.org/api/rest_v1/page/summary/New_York_City
+```
